@@ -30,6 +30,5 @@ export default function h(){
     ],'',undefined)
 
   const div_hello = document.getElementById('hello');
-
   patch(div_hello,vnode1)
 }

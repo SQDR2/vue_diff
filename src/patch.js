@@ -4,6 +4,8 @@ import vnode from "./vnode.js";
 import patchVnode from "./patchVnode.js";
 export default function(oldVnode,newVnode){
 
+    console.log(oldVnode);
+    console.log(newVnode);
   //判断第一个参数是这是真实节点还是虚拟节点 如果是真实节点 转化为虚拟节点 再去比对
   if(oldVnode.sel == undefined){
     // oldVnode = vnode(oldVnode.tagName.toLowerCase(),{},undefined,oldVnode.innerText,oldVnode)
